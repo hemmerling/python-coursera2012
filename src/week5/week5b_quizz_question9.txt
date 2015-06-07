@@ -1,0 +1,46 @@
+# 1521x1818 pixel map of native American language
+# source - Gutenberg project
+
+image1 = simplegui.load_image("http://www.hemmerling.com/wikidata/media/images/hemmerling.01.jpg")
+image2 = simplegui.load_image("http://commondatastorage.googleapis.com/codeskulptor-assets/alphatest.png")
+
+
+# Draw image
+def draw1(canvas):
+    global image1
+    width = image1.get_width()
+    height = image1.get_height()
+    center_source = [300//2, 400//2]
+    width_height_source = [ 300, 400 ]
+    center_dest = [300/2, 400/2]
+    width_height_dest = [300, 400]
+    canvas.draw_image(image1, center_source, width_height_source, center_dest, width_height_dest)
+ 
+# Draw image
+def draw2(canvas):
+    global image2
+    width = image2.get_width()
+    height = image2.get_height()
+    center_source = [380//2, 287//2]
+    width_height_source = [ 380, 287 ]
+    center_dest = [380/2, 287/2]
+    width_height_dest = [380, 287]
+    canvas.draw_image(image2, center_source, width_height_source, center_dest, width_height_dest)
+
+    
+# Create frame for scaled map
+width = image1.get_width()
+height = image1.get_height()
+#frame1 = simplegui.create_frame("Image1", width, height)
+
+width = image2.get_width()
+height = image2.get_height()
+frame2 = simplegui.create_frame("Image2", width, height)
+
+# register even handlers
+#frame1.set_draw_handler(draw1)
+frame2.set_draw_handler(draw2)
+
+# Start frame
+#frame1.start()
+frame2.start()

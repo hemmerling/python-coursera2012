@@ -1,0 +1,79 @@
+1)
+Spaceship
+======================
+Spaceship class - two fields
+  self.angle - sip orientation ( scalar / float )
+  self.angle.vel = ship's angualr velocity ( scalar / float )
+  
+  update method
+   self.angle += self.angle_vel
+   
+   key handlercontrols self.angle.vel
+   
+   Draw method
+    canvas.draw_image(self.image,.,.,.. self.angle)
+    
+2)    
+Relating position, velocity and acceleration
+============================================
+
+Basic physics
+  position = point
+  velocity = vector
+  acceleration = vector
+  
+Position update ( similar to "Pong" game )
+  position += velocity
+  
+Velocity update
+  velocity += acceleration
+  
+ 
+3)   
+Adding Acceleration to the spaceship
+====================================
+
+Ship class - four fields
+  self.pos - ship's position ( vector / pair of floats )
+  self.vel - ship's velocity ( vector / pair of floats )
+  self.angle - ship's orientation ( scalar / float )
+  self.thrust - whether ship is accelerating in forward direction ( Boolean )
+  
+# Position updaete
+self.pos[0] += self.vel[0]
+self.pos[1] += self.vel[1]
+
+# Velocity update - accelleration in direction of forward vector
+forward = [math.cos(self.angle), math.sin(self.angle)]
+
+if self.thrust:
+  self.vel[0] += forward[0]
+  self.vel[1] += forward[1] # multiply these values by constant
+  
+4)
+Adding Friction to the spaceship
+====================================
+Friction = let c be a small constant
+friction = -c * velocity
+
+accelleration = thrust + friction
+
+velocity = velocity + acceleration
+veloity = velocity + thrust + friction
+velocity = velocity + thrust - c*velocity
+velocity = ( 1- c )* velocity + thrust
+  
+# Position updaete
+self.pos[0] += self.vel[0]
+self.pos[1] += self.vel[1]
+
+# Thrust update - accelleration in direction of forward vector
+forward = [math.cos(self.angle), math.sin(self.angle)]
+
+if self.thrust:
+  self.vel[0] += forward[0]
+  self.vel[1] += forward[1] # multiply these values by constant
+  
+
+
+ 

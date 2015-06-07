@@ -1,0 +1,11 @@
+def next(x):
+    return (x ** 2 + 79) % 997
+
+x = 1
+result = set([])
+result.add(x)
+for i in range(1000):
+    #print x
+    x = next(x)
+    result.add(x)
+    print len(result)

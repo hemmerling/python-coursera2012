@@ -1,0 +1,20 @@
+def list_extend_many(lists):
+    result = []
+    i = 0
+    while i < len(lists): 
+        result.extend(lists[i])
+        i += 1
+    return result
+
+print list_extend_many([[1,2], [3], [4, 5, 6], [7]])
+
+
+def list_extend_many2(lists):
+    result = []
+    i = 0
+    while i < len(lists): 
+        result += lists[i]
+        i += 1
+    return result
+
+print list_extend_many2([[1,2], [3], [4, 5, 6], [7]])

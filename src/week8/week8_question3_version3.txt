@@ -1,0 +1,24 @@
+s=set([1,2])
+t=set([3,4])
+s.union(t)
+print s
+
+s=set([1,2])
+t=set([3,4])
+s.union(t.difference(s))
+print s
+
+s=set([1,2])
+t=set([3,4])
+s.update(t)
+print s
+
+s=set([1,2])
+t=set([3,4])
+s.union(s.difference(t))
+print s
+
+s=set([1,2])
+t=set([3,4])
+s.union(s.symmetric_difference(t)) 
+print s

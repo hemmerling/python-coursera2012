@@ -1,0 +1,29 @@
+s=set([1,2])
+t=set([3,4])
+t.difference_update(s)
+print s
+
+s=set([1,2])
+t=set([3,4])
+s.difference(t)
+print s
+
+s=set([1,2])
+t=set([3,4])
+t.difference(s)
+print s
+
+s=set([1,2])
+t=set([3,4])
+s = t
+print s
+
+s=set([1,2])
+t=set([3,4])
+s.discard(2)
+print s
+
+s=set([1,2])
+t=set([3,4])
+s.difference_update(t) 
+print s
