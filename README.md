@@ -14,10 +14,13 @@ For each listed tasked, I developed a software program in the programming langua
 7. Spaceship ( The spaceship for the video game “Asteroids” )
 8. RiceRocks ( Video game “Asteroids” )
 
-I myself also assessed  the software programs of 5 other course participatns in addition to my own solution.
+I myself also assessed  the software programs of 5 other course participants in addition to my own solution.
 
-The target platform was the online development environment “CodeSculptor”, running in the Firefox browser and supplying a Python 2.6 runtime. I did parallel software development on a  Python 2.7.3 system, running as local installation. I developed with the unit test method, by using the  Python module PyUnit.
+The target platform was the online development environment “CodeSculptor”, http://www.codeskulptor.org/, running in the Firefox browser and supplying a Python 2.6 runtime. I did parallel software development on a  Python 2.7.3 system, running as local installation. I developed with the unit test method, by using the  Python module PyUnit.
 
 Additionally I passed successfully 15 online testquestion formulars for learning support ( “Quizz” ), similar to test question sections in a classical paper book. By the options to process the tests without time pressure and to repeat tests, the course participants were supported in their learning process.
 
 The organizer estimated the average workload for course participation to about 7-9 hours/week.
+
+See also
+http://www.hemmerling.com/doku.php/en/python06.html
